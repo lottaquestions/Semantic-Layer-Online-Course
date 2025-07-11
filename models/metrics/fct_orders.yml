@@ -76,6 +76,12 @@ semantic_models:
 
 metrics:
 #SIMPLE TYPE METRICS
+  - name: "total_order_count"
+    label: "total_order_count"
+    description: the number of orders placed
+    type: simple
+    type_params: 
+      measure: order_count 
   - name: "order_total"
     description: "Sum of orders value"
     type: simple
@@ -222,9 +228,4 @@ saved_queries:
         config:
           export_as: table
           schema: faith_tests_exports
-  - name: "order_count"
-    label: "order_count"
-    description: the number of orders placed
-    type: simple
-    type_params: 
-      measure: order_count 
+
